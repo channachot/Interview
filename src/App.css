@@ -21,11 +21,22 @@ body{
   font-family: Tahoma;
 }
 .Navbar{
-  font-size: 25px;
-  color:#ffffff;;
   padding: 20px;
   background-color: #12232e;
+  display: inline-flex;
+  width:100%;
+}
+.Menu{
+  border-right:1px #ffffff solid;
+  font-size: 25px;
+  color:#ffffff;
   font-family: Tahoma;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* margin-right: 10px; */
+}
+.Menu:hover{
+  color: red;
 }
 .Input {
   text-align: center;
@@ -115,8 +126,6 @@ th{
   border :  none;
   background :none;
   padding : 0;
-  cursor:pointer;
-
   text-align: center;
 }
 
