@@ -1,38 +1,129 @@
-.App {
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+body{
+  background : #ffffff;
+  color : #000000;
+}
+.Title{
+  text-align: center;
+  color : #ffffff;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 35px;
+  /* background : #de354c; */
+  background : #007cc7;
+
+  font-family: Tahoma;
+}
+.Navbar{
+  font-size: 25px;
+  color:#ffffff;;
+  padding: 20px;
+  background-color: #12232e;
+  font-family: Tahoma;
+}
+.Input {
+  text-align: center;
+  margin-top:10px;
+  background: #ffffff;
+  /* width:50%; */
+  height:350px;
+  border-radius:10px;
+  border: 2px black solid;
+  padding-top: 15px;
+  box-sizing: content-box;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top:25px;
+  /* padding-left: 50%; */
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+}
+.fieldinput{
+  margin-bottom: 10px;
+  border-radius:10px;
+  width:75%;
+  padding: 10px;
+  /* padding-top: 5px; */
+}
+.nameinput{
+  margin-bottom: 5px;
+  font-family: Tahoma;
+  font-size: 25px;
+}
+.Input__Data{
+  margin-left: 33.3%;
+  margin-right: 33.3%;
+  margin-top:15px;
+  margin-bottom:30px;
+  color: #ffffff;
+  width: 33.3%;
+  padding: 10px;
+  background-color: #000000;
+}
+
+
+.column1 {
+  float: left;
+  width: 90%;
+
+}
+.column2 {
+  float: left;
+  width:  10%;
+}
+
+table {
+  /* text-align: center; */
+  /* font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
+  font-family: Tahoma;
+  color: #000000;
+  font-size: 15px;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-collapse: collapse;
+  border:1px #000000 solid; 
+  text-align: center;
+}
+table:nth-child(odd) tr{
+  background-color: #afafaf;
+}
+table:nth-child(odd) tr{
+  background-color: #cfcfcf;
+}
+
+th,td {
+  border: 1px solid #dedede; 
+  padding: 10px;
+
+}
+.col1,.col2,.col3,.col4{
+  width:22.5%;
+}
+.col5{
+  width:10%;
+}
+th{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.deleted_Data{
+  border :  none;
+  background :none;
+  padding : 0;
+  cursor:pointer;
+  /* align-items: center; */
+  /* justify-content: center; */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
