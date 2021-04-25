@@ -19,11 +19,11 @@ function App() {
   function addData(Firstname,Lastname,Id,Faculty){
     const newData = {keyid,Firstname,Lastname,Id,Faculty};
     setData([...Data,newData ]);
+
     keyid +=1;
   }
   function deleteData(keyid){
     const updatedData = Data.filter((data) => data.keyid !== keyid );
-    // setData([updatedData, ...Data]);
     setData(updatedData);
   }
 

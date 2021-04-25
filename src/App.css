@@ -40,11 +40,7 @@ body{
   margin-left: 25%;
   margin-right: 25%;
   margin-top:25px;
-  /* padding-left: 50%; */
-  /* position: absolute; */
-  /* top: 50%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
+
 }
 .fieldinput{
   margin-bottom: 10px;
@@ -81,8 +77,7 @@ body{
 }
 
 table {
-  /* text-align: center; */
-  /* font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
+
   font-family: Tahoma;
   color: #000000;
   font-size: 15px;
@@ -121,8 +116,7 @@ th{
   background :none;
   padding : 0;
   cursor:pointer;
-  /* align-items: center; */
-  /* justify-content: center; */
+
   text-align: center;
 }
 
