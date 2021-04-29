@@ -20,6 +20,17 @@ body{
 
   font-family: Tahoma;
 }
+.Tail{
+  margin-top: 100px;
+  text-align: center;
+  color : #ffffff;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 20px;
+  /* background : #de354c; */
+  background : #CFB53B	;
+  /* font-family: Tahoma; */
+}
 .Navbar{
   padding: 20px;
   background-color: #12232e;
@@ -40,23 +51,25 @@ body{
 }
 .Input {
   text-align: center;
-  margin-top:10px;
   background: #ffffff;
-  /* width:50%; */
-  height:350px;
+  width:40%;
+  height:450px;
   border-radius:10px;
   border: 2px black solid;
   padding-top: 15px;
   box-sizing: content-box;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top:25px;
-
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top:35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .fieldinput{
   margin-bottom: 10px;
   border-radius:10px;
-  width:75%;
+  width:90%;
   padding: 10px;
   /* padding-top: 5px; */
 }
@@ -74,9 +87,39 @@ body{
   width: 33.3%;
   padding: 10px;
   background-color: #000000;
+  border-bottom: px #000000 solid;
 }
-
-
+.Input__Data:active{
+  background-color: #DF2823;
+}
+.Line_Bot{
+  border-bottom: 2px #000000 solid;
+  margin-bottom: 30px;
+}
+.FindData{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 50px;
+}
+.Topic_selected{
+  margin:0px 15px 0px 15px
+}
+.FindData_Input{
+  padding: 5px;
+}
+.ButtonSearch{
+  margin-left:40px;
+  width: 10%;
+  /* padding: 10px; */
+  background-color: #000000;
+  border-bottom: px #000000 solid;
+  color:#ffffff;
+  
+}
+.ButtonSearch:active{
+  background-color: #DF2823;
+}
 .column1 {
   float: left;
   width: 90%;
@@ -130,3 +173,14 @@ th{
 }
 
 
+.noStudent{
+  color : #12232e;
+  font-family: Tahoma;
+  font-size: 30px;
+  border : 1px #000000 solid;
+  padding:15px;
+  width:20%;
+  margin-left:15%;
+  margin-top:50px;
+  border-radius: 5px;
+}

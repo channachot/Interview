@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
-function Input_text({addData}){
+function Input_text({addData,countStd}){
+    
     const [Values, setValues] = useState({
         Firstname : '',
         Lastname : '',
@@ -19,6 +20,7 @@ function Input_text({addData}){
             Id : '',
             Faculty : ''    
         });
+        countStd(1);
     }
     return(
         <div>
@@ -34,14 +36,11 @@ function Input_text({addData}){
 
                     <div className = 'nameinput'>Faculty</div>
                     <input className ='fieldinput' type='text' name ='Faculty' value={Values.Faculty} onChange={onChange}/>
-
-                    <div>
-                    
-                    </div>
             </div>
             <button className = 'Input__Data'  onClick = {onClick}  >
                 Add Data
             </button>
+            <hr className='Line_Bot'/>
         </div>
     );
 }
