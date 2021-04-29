@@ -36,14 +36,14 @@ function SearchTable({clickButton,createTable}){
     
     return(
         <div className='FindData'>
-            <p className='Topic_selected'>Firstname</p>
+            <p className='Topic_selected'>First name</p>
             <input type='text' className='FindData_Input' name='Firstname' value={Find.Firstname} onChange={onChange}/>
-            <p className='Topic_selected'>Lastname</p>
-            <input type='text' className='FindData_Input'name='Lastname' value={Find.Lastname} onChange={onChange}/>
+            <p className='Topic_selected'>Last name</p>
+            <input type='text' className='FindData_Input' name='Lastname' value={Find.Lastname} onChange={onChange}/>
             <p className='Topic_selected'>Id</p>
-            <input type='text' className='FindData_Input'name='Id' value={Find.Id} onChange={onChange}/>
+            <input type='text' className='FindData_Input' name='Id' value={Find.Id} onChange={onChange}/>
             <p className='Topic_selected'>Faculty</p>
-            <input type='text' className='FindData_Input'name='Faculty' value={Find.Faculty} onChange={onChange}/>
+            <input type='text' className='FindData_Input' name='Faculty' value={Find.Faculty} onChange={onChange}/>
             <button className='ButtonSearch' onClick={onClick}>Search</button>
         </div>
     )
