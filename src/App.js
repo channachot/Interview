@@ -56,22 +56,18 @@ function App() {
   //     setTablesearch(newTable);
   // }
 
-  // async function createTable(Firstname,Lastname,Id,Faculty){
   function createTable(Firstname,Lastname,Id,Faculty){  
     try{
       let newTableFi = Data.filter((data) => ( Firstname !== '') 
       ? data.Firstname === Firstname : data.Firstname.length >0
       );
-      let newTableL =  newTableFi;
-      newTableL = newTableFi.filter((data) => ( Lastname !== '') 
+      let newTableL = newTableFi.filter((data) => ( Lastname !== '') 
       ? data.Lastname === Lastname : data.Lastname.length >0
       );
-      let newTableI =  newTableL;
-      newTableI = newTableL.filter((data) => ( Id !== '') 
+      let newTableI = newTableL.filter((data) => ( Id !== '') 
       ? data.Id === Id : data.Id.length >0
       );
-      let newTableFa =  newTableI;
-      newTableFa = newTableI.filter((data) => ( Faculty !== '') 
+      let newTableFa = newTableI.filter((data) => ( Faculty !== '') 
       ? data.Faculty === Faculty : data.Faculty.length >0
       );
       setTablesearch(newTableFa);
