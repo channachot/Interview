@@ -13,14 +13,23 @@ function Input_text({addData,countStd}){
     }
     function onClick(event){
         event.preventDefault()
-        addData(Values.Firstname,Values.Lastname,Values.Id,Values.Faculty);
+        if(Values.Firstname!==''&&
+        Values.Lastname!==''&&
+        Values.Id!==''&&
+        Values.Faculty!==''){
+            addData(Values.Firstname,Values.Lastname,Values.Id,Values.Faculty);
+            countStd(1);
+        }
+        else{
+            alert('Please fill out information in this form')
+        }
         setValues({
             Firstname : '',
             Lastname : '',
             Id : '',
             Faculty : ''    
         });
-        countStd(1);
+        
     }
     return(
         <div>
